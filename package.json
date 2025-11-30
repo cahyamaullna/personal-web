@@ -1,0 +1,42 @@
+{
+  "name": "info",
+  "version": "0.4.0",
+  "private": true,
+  "packageManager": "pnpm@7.17.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 3333",
+    "preview": "vite preview",
+    "build": "vite-ssg build",
+    "type-check": "vue-tsc --noEmit",
+    "release": "pnpm lint && bumpp package.json --commit --push --tag"
+  },
+  "dependencies": {
+    "@vueuse/components": "^9.13.0",
+    "@vueuse/core": "^9.13.0",
+    "@vueuse/head": "^1.1.26",
+    "danmaku-vue": "^1.0.2",
+    "popmotion": "^11.0.5",
+    "three": "^0.149.0",
+    "vue": "^3.4.5"
+  },
+  "devDependencies": {
+    "@sennery/eslint-config": "^0.4.1",
+    "@tsconfig/node18": "^2.0.1",
+    "@types/node": "^18.16.19",
+    "@types/three": "^0.149.0",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vue/tsconfig": "^0.4.0",
+    "autoprefixer": "^10.4.16",
+    "bumpp": "^8.2.1",
+    "critters": "^0.0.16",
+    "eslint": "^8.44.0",
+    "postcss": "^8.4.33",
+    "tailwindcss": "^3.4.1",
+    "typescript": "~5.1.6",
+    "vite": "^4.4.2",
+    "vite-plugin-spa-loading": "^1.2.2",
+    "vite-ssg": "^0.22.2",
+    "vue-tsc": "^1.8.4"
+  }
+}

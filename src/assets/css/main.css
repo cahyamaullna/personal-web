@@ -1,0 +1,63 @@
+@layer reset, default, layout, components;
+
+@import './reset.css' layer(reset);
+@import './base.css' layer(default);
+@import './fonts.css' layer(default);
+
+@layer default {
+  #app {
+    min-width: 100vw;
+    padding: 0 5rem;
+  }
+  
+  html {
+    scroll-snap-type: y proximity;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  h3, p, ul {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    color: var(--color-text-secondary);
+    font-weight: 300;
+  }
+  
+  @media (max-width: 800px) {
+    #app {
+      --animation-values-coef: 0.3;
+  
+      padding: 0 1rem;
+    }
+  
+    html {
+      scroll-snap-type: none;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    h2 {
+      font-size: 2rem;
+    }
+  
+    h3, p, ul {
+      font-size: 1.5rem;
+    }
+  
+    p {
+      text-align: justify;
+    }
+  }
+}
