@@ -7,11 +7,10 @@ import { spaLoading } from 'vite-plugin-spa-loading'
 export default defineConfig({
   plugins: [
     vue(),
-    spaLoading('img', {
+    spaLoading('text', {
       debounce: 100,
-      src: './src/assets/loading.gif',
+      tipText: 'Loading...',
       devEnable: true,
-      tipText: '',
     }),
   ],
   resolve: {
