@@ -67,7 +67,7 @@ export function init ({ canvas, width, height, ratio }: InitSceneParamsWorker) {
   fsQuad = new FullScreenQuad(dispMat)
 
   const planeGeometry = new THREE.PlaneGeometry(50, 50, 100, 100)
-  planeMaterial = new THREE.MeshStandardMaterial({ color: '#66cfe4' })
+  planeMaterial = new THREE.MeshStandardMaterial({ color: '#56afc1' })
   planeMaterial.displacementMap = dispRT.texture
   planeMaterial.displacementScale = 0
 
