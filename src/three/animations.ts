@@ -21,9 +21,12 @@ export function animateBackgroundIntersectionTitle () {
   
 export function animateBackgroundIntersectionAbout () {
   animateScene({
-    lightPositionX: -20,
-    noiseDisplacementScale: 15,
-    noiseFrequencyCoef: 2,
+    lightPositionX: -30,
+    lightPositionZ: 10,
+    planePositionX: 5,
+    planeRotationY: -20 * (Math.PI / 100),
+    noiseDisplacementScale: 10,
+    noiseFrequencyCoef: 10,
   })
 }
   

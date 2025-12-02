@@ -4,6 +4,7 @@ import SectionTitle from '@/components/SectionTitle.vue'
 import SectionAbout from '@/components/SectionAbout.vue'
 import SectionExperience from '@/components/SectionExperience.vue'
 import SectionContacts from '@/components/SectionContacts.vue'
+import SectionTools from '@/components/SectionTools.vue'
 
 const sections = [
   { id: 'title', text: 'Hi' },
@@ -30,8 +31,8 @@ const scrollToSection = (id: string) => {
       id="about"
       class="snap-center"
     />
+    <SectionTools class="snap-center" />
     <SectionExperience id="experience" />
-    
     <SectionContacts
       id="contacts"
       class="snap-center"

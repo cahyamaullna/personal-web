@@ -30,6 +30,17 @@ function onIntersection (entries: IntersectionObserverEntry[]) {
     animateBackgroundIntersectionAbout()
   }
 }
+
+const expTimeFormatted = computed(() => {
+  const total = sumSeconds.value
+
+  const days = Math.floor(total / 86400)
+  const hours = Math.floor((total % 86400) / 3600)
+  const minutes = Math.floor((total % 3600) / 60)
+  const seconds = total % 60
+
+  return `${days}d ${hours}h ${minutes}m ${seconds}s`
+})
 </script>
 
 <template>
@@ -41,11 +52,12 @@ function onIntersection (entries: IntersectionObserverEntry[]) {
     <div class="about-content">
       <div class="text-content">
         <p>
-          Hello, traveler! Welcome to my personal website. I'm {{ myName }}, a Web developer and tech enthusiast. I enjoy programming,
-          listening to music, and exploring art. My goal is to become a better
-          version of myself every day. 
+          Hello, traveler! Welcome to my personal website. I'm {{ myName }}, a
+          Web developer and tech enthusiast. I enjoy programming, listening to
+          music, and exploring art. My goal is to become a better version of
+          myself every day.
         </p>
-        <p>
+        <p style="margin-top: 5px">
           This website has been running for
           <span
             v-if="onlySeconds"
@@ -53,6 +65,14 @@ function onIntersection (entries: IntersectionObserverEntry[]) {
             @click="changeExpTime"
           >
             {{ sumSeconds }} seconds.
+          </span>
+
+          <span
+            v-else
+            class="exp-time"
+            @click="changeExpTime"
+          >
+            {{ expTimeFormatted }}
           </span>
         </p>
       </div>
