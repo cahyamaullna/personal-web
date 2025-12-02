@@ -53,11 +53,11 @@ const expTimeFormatted = computed(() => {
       <div class="text-content">
         <p>
           Hello, traveler! Welcome to my personal website. I'm {{ myName }}, a
-          Web developer and tech enthusiast. I enjoy programming, listening to
+          Web developer and tech enthusiast. I enjoy programming, making
           music, and exploring art. My goal is to become a better version of
           myself every day.
         </p>
-        <p style="margin-top: 5px">
+        <p style="margin-top: 15px">
           This website has been running for
           <span
             v-if="onlySeconds"

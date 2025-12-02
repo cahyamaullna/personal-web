@@ -11,7 +11,7 @@ const experiences = [
     year: 'Web Software Developer (2022 - Present)',
     description:
       '- Responsible for leading the frontend development of new AP2T modules (Billing, RTR, and FSM) using a Micro Frontend (MFE) architecture. Focused on building scalable, modular, and high-performance interfaces integrated within enterprise systems.',
-    description2: '- Developed and maintained frontend - backend services for PLTS Atap, Web Portal modules (Dedicated Source (DS), SPKLU, Home Charging Services and API Intergration PLN Mobile) etc.',
+    description2: '- Developed and maintained frontend - backend services for PLTS Atap, Web Portal modules (Dedicated Source (DS), SPKLU, Home Charging Services and API Integration PLN Mobile) etc.',
   },
   {
     title: 'PT FAN Integrasi Teknologi',
