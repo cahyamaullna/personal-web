@@ -41,8 +41,7 @@ function onIntersection (entries: IntersectionObserverEntry[]) {
     <div class="about-content">
       <div class="text-content">
         <p>
-          Hello, traveler! Welcome to my personal website. I'm {{ myName }}, a
-          <span>{{ age }}</span>-year-old web developer and tech enthusiast. I enjoy programming,
+          Hello, traveler! Welcome to my personal website. I'm {{ myName }}, a Web developer and tech enthusiast. I enjoy programming,
           listening to music, and exploring art. My goal is to become a better
           version of myself every day. 
         </p>
@@ -112,7 +111,7 @@ function onIntersection (entries: IntersectionObserverEntry[]) {
   width: 20rem;
   height: 20rem;
   border-radius: 50%;
-  background: url("../assets/pp.jpg") center center/cover no-repeat;
+  background: url("../assets/pp.jpeg") center center/cover no-repeat;
   margin-left: 10rem;
   margin-top: -1rem;
   transition: transform 0.3s ease-out;
